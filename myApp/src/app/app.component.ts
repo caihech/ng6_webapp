@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  h = "<h2>这是一个 h2 用[innerHTML]来解析</h2>";
+
 }
