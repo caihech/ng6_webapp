@@ -30,9 +30,11 @@
 <hr />
 
 <button (click)='getMsg()'>单击事件</button>
+
+<button (click)='run($event)'>事件对象</button>
 <hr />
 
- <button (click)='updateFlagValue()'>切换显示隐藏div</button>
+<button (click)='updateFlagValue()'>切换显示隐藏div</button>
 <div *ngIf='flag'>我想说......</div> 
 
 

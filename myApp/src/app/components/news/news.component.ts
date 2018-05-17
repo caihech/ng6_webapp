@@ -81,4 +81,8 @@ export class NewsComponent implements OnInit {
     }
   }
 
+  run(e){
+    console.info(e);
+  }
+
 }
