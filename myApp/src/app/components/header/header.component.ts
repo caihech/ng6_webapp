@@ -7,12 +7,17 @@ import { Component, OnInit } from '@angular/core'; /*引入 angular 核心*/
 })
 export class HeaderComponent implements OnInit {  /*实现接口*/
 
+  testTxt = 'this is';
+
+  testAny: any;
+
   constructor() {
     /*构造函数*/
-   }  
+  }
 
   ngOnInit() {
     /*初始化加载的生命周期函数*/
+    this.testAny = "header";
   }
 
 }
