@@ -20,6 +20,7 @@ export class NewsComponent implements OnInit {
 
   public msg: any;
 
+  public flag: boolean;
 
   datas: Array<any> = [
     { id: 1, date: "2017-04-1", title: "测试标题1", content: "测试内容1" },
@@ -38,6 +39,7 @@ export class NewsComponent implements OnInit {
 
     this.list = ['1', '2', '3'];
     this.msg = "信息";
+    this.flag = true;
 
     this.stuudents = [
       {
@@ -68,6 +70,15 @@ export class NewsComponent implements OnInit {
   getMsg() {
 
     alert(this.msg);
+
+  }
+
+  updateFlagValue() {
+    if (this.flag) {
+      this.flag = false;
+    } else {
+      this.flag = true;
+    }
   }
 
 }

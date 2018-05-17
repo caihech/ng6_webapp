@@ -32,6 +32,11 @@
 <button (click)='getMsg()'>单击事件</button>
 <hr />
 
+ <button (click)='updateFlagValue()'>切换显示隐藏div</button>
+<div *ngIf='flag'>我想说......</div> 
+
+
+
 <table border="{{tabBower}}}" style="width: 100%;">
 
   <thead>
