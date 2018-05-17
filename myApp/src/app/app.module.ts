@@ -4,20 +4,18 @@
 
 /*引入组件*/
 
-/*BrowserModule，浏览器解析的模块*/
-import { BrowserModule } from '@angular/platform-browser';
-/*angualrjs 核心模块*/
-import { NgModule } from '@angular/core';
-/*根组件*/
-import { AppComponent } from './app.component';
 
 
-/*@NgModule 装饰器将 AppModule 标记为 Angular 模块类(也叫 NgModule 类)。
-@NgModule 接受一个元数据对象，告诉 Angular 如何编译和启动应用。*/
+import { BrowserModule } from '@angular/platform-browser'; /*BrowserModule，浏览器解析的模块*/
+import { NgModule } from '@angular/core'; /*angualrjs 核心模块*/
+import { AppComponent } from './app.component'; /*根组件*/
+import { HeaderComponent } from './components/header/header.component';
+
+
 @NgModule({
    /*引入当前项目运行的的组件*/
   declarations: [
-    AppComponent
+    AppComponent,HeaderComponent
   ],
    /*引入当前模块运行依赖的其他模块*/
   imports: [
