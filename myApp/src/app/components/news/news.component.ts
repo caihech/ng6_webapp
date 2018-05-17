@@ -18,6 +18,8 @@ export class NewsComponent implements OnInit {
 
   public stuudents: any[];
 
+  public msg: any;
+
 
   datas: Array<any> = [
     { id: 1, date: "2017-04-1", title: "测试标题1", content: "测试内容1" },
@@ -35,6 +37,7 @@ export class NewsComponent implements OnInit {
   constructor() {
 
     this.list = ['1', '2', '3'];
+    this.msg = "信息";
 
     this.stuudents = [
       {
@@ -60,6 +63,11 @@ export class NewsComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  getMsg() {
+
+    alert(this.msg);
   }
 
 }
