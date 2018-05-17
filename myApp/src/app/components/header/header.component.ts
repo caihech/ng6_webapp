@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {  /*实现接口*/
   ngOnInit() {
     /*初始化加载的生命周期函数*/
     this.testAny = "header";
-    this.h = "<h2>这是一个 h2 用[innerHTML]来解析</h2>";
+   
   }
 
 }
