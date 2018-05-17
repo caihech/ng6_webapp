@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
+  title = '新闻模块';
+  public name1: string = 'name=1';
+
+  public tabBower: any = 1;
+
+  public list = [];
+  public obj = { name: 'aabvcc' };
+
+
+  public stuudents: any[];
+
+
   datas: Array<any> = [
     { id: 1, date: "2017-04-1", title: "测试标题1", content: "测试内容1" },
     { id: 2, date: "2017-04-2", title: "测试标题2", content: "测试内容2" },
@@ -20,7 +32,32 @@ export class NewsComponent implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor() {
+
+    this.list = ['1', '2', '3'];
+
+    this.stuudents = [
+      {
+        'name': '学生a',
+        'credits': [
+          { 'chinese': '98' },
+          { 'chinese': '55' }
+        ]
+      }, {
+        'name': '学生b',
+        'credits': [
+          { 'chinese': '12' },
+          { 'chinese': '33' }
+        ]
+      }, {
+        'name': '学生c',
+        'credits': [
+          { 'chinese': '66' },
+          { 'chinese': '77' }
+        ]
+      }
+    ];
+  }
 
   ngOnInit() {
   }

@@ -2,11 +2,35 @@
 
 
 <p>
-  news works!
+  {{title}}
 </p>
+<hr /> {{name1}}
+<hr /> {{obj.name}}
+<hr /> aa
+<ul>
+  <li *ngFor="let item of list">{{item}}</li>
+</ul>
+<hr /> bb
+
+<ul>
+  <li *ngFor="let item of list;let key=index">{{item}}--{{key}}</li>
+</ul>
 
 
-<table border="1">
+
+<hr />
+<ul *ngFor="let item of stuudents;let key=index">
+  <li>{{item.name}}--{{key}}</li>
+  <ol *ngFor="let temp of item.credits">
+    <li>
+      {{temp.chinese}}
+    </li>
+  </ol>
+</ul>
+<hr />
+
+
+<table border="{{tabBower}}}" style="width: 100%;">
 
   <thead>
     <tr>
@@ -17,8 +41,8 @@
     </tr>
   </thead>
 
-  <tbody *ngFor="let item of datas">
-    <tr>
+  <tbody>
+    <tr *ngFor="let item of datas">
       <td>{{item.id}}</td>
       <td>{{item.date}}</td>
       <td>{{item.title}}</td>
