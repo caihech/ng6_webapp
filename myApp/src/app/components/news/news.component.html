@@ -1,0 +1,26 @@
+<p>
+  news works!
+</p>
+
+
+<table border="1">
+
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>date</th>
+      <th>title</th>
+      <th>content</th>
+    </tr>
+  </thead>
+
+  <tbody *ngFor="let item of datas">
+    <tr>
+      <td>{{item.id}}</td>
+      <td>{{item.date}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.content}}</td>
+    </tr>
+  </tbody>
+
+</table>
