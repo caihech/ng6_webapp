@@ -15,6 +15,7 @@ export class NewsComponent implements OnInit {
   public list = [];
   public obj = { name: 'aabvcc' };
 
+  public search: any;
 
   public stuudents: any[];
 
@@ -40,6 +41,7 @@ export class NewsComponent implements OnInit {
     this.list = ['1', '2', '3'];
     this.msg = "信息";
     this.flag = true;
+    this.search = '';
 
     this.stuudents = [
       {
@@ -81,7 +83,7 @@ export class NewsComponent implements OnInit {
     }
   }
 
-  run(e){
+  run(e) {
     console.info(e);
   }
 
