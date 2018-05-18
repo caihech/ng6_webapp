@@ -28,7 +28,6 @@ export class TodolistComponent implements OnInit {
       }
       this.list.push(obj);
       this.username = '';
-
     }
   }
 
