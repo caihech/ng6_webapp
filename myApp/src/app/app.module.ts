@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NewsComponent } from './components/news/news.component';
 import { HomeComponent } from './components/home/home.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, NewsComponent, HomeComponent
+    AppComponent, HeaderComponent, NewsComponent, HomeComponent, TodolistComponent
   ],
   imports: [
     BrowserModule,FormsModule
