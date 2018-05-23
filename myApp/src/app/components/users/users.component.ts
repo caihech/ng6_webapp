@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, Jsonp } from "@angular/http";
+import { Http, Jsonp, Headers } from "@angular/http";
 import { url } from 'inspector';
 @Component({
   selector: 'app-users',
@@ -39,10 +39,29 @@ export class UsersComponent implements OnInit {
       .subscribe(
         function (data) {
           console.log(data['_body']['result']);
-          _that.list=data['_body']['result'];
+          _that.list = data['_body']['result'];
         }, function (err) {
           console.log('失败');
         });
+
+  }
+
+  postData() {
+
+    var postData = JSON.stringify({ "username": "aaaa" });
+    var headers = new Headers({ 'Content-Type': 'application/json' });
+    var url = "http://test.svc.s2icode.com/api/svc/version";
+    this.http.post(url
+      , postData
+      , { headers: headers })
+      .subscribe(
+        function (data) {
+          console.log(data);
+        },
+        function (err) {
+          console.log(err);
+        }
+      );
 
   }
 
