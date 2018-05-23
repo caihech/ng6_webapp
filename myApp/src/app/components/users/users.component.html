@@ -1,0 +1,20 @@
+<p>
+  users works!
+</p>
+
+<button (click)="getAjax()">GET Ajax Version</button>
+<button (click)="getJsonp()">GET Jsonp Version</button>
+
+<p>name:{{entity.name}}</p>
+<p>version:{{entity.version}}</p>
+<p>time:{{entity.time}}</p>
+
+<ul>
+
+  <li *ngFor="let item of list;let id=index;">
+
+    {{id}}---{{item.title}}
+
+  </li>
+
+</ul>
