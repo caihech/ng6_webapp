@@ -7,14 +7,16 @@ import { NewsComponent } from './components/news/news.component';
 import { HomeComponent } from './components/home/home.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
 
+import { StorageService } from './services/storage.service';
+
 @NgModule({
   declarations: [
     AppComponent, HeaderComponent, NewsComponent, HomeComponent, TodolistComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule, FormsModule
   ],
-  providers: [],
+  providers: [StorageService],
   bootstrap: [AppComponent]
 })
 
